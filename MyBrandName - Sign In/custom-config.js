@@ -28,6 +28,6 @@ function getCurrentConfigs () {
   //if (currentConfig.appId === "0oadev1234567890") {
     // Perform App-specific logic
   //}
-  return currentConfig.appId;
+  return currentConfig;
 };
 console.log('----end----');
