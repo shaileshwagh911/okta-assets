@@ -6,7 +6,7 @@ function getCurrentConfigs () {
       appId: "0oadev1234567890",
       env: "development"
     },
-    "twdb.demoshailesh.com": { // or prod-987654.okta.com
+    "twdb.demoshailesh.com": { 
       appId: "0oaprod0987654321",
       env: "production"
     }
