@@ -1,2 +1,31 @@
 
-console.log("Hello, world from MyBrandName");
+(function () {
+  // Map Okta domain hostnames to their App IDs
+  const ENV_CONFIG = {
+    "dev-123456.okta.com": {
+      appId: "0oadev1234567890",
+      env: "development"
+    },
+    "login.demoshailesh.com": { // or prod-987654.okta.com
+      appId: "0oaprod0987654321",
+      env: "production"
+    }
+  };
+
+  // Get current Okta tenant hostname
+  const currentHost = window.location.hostname;
+  const currentConfig = ENV_CONFIG[currentHost];
+
+  if (!currentConfig) {
+    console.error("Unknown Okta environment:", currentHost);
+    return;
+  }
+
+  // Execute business logic with the dynamic App ID
+  console.log("Running in " + currentConfig.env + " with App ID: " + currentConfig.appId);
+
+  // Example logic checking App ID
+  if (currentConfig.appId === "0oadev1234567890") {
+    // Perform App-specific logic
+  }
+})();
