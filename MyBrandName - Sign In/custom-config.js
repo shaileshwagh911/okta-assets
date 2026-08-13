@@ -1,5 +1,5 @@
 
-(function () {
+function getCurrentConfigs () {
   // Map Okta domain hostnames to their App IDs
   const ENV_CONFIG = {
     "dev-123456.okta.com": {
@@ -25,7 +25,8 @@
   console.log("Running in " + currentConfig.env + " with App ID: " + currentConfig.appId);
 
   // Example logic checking App ID
-  if (currentConfig.appId === "0oadev1234567890") {
+  //if (currentConfig.appId === "0oadev1234567890") {
     // Perform App-specific logic
-  }
-})();
+  //}
+  return currentConfigs;
+};
