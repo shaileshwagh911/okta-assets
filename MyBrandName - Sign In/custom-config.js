@@ -1,4 +1,4 @@
-console.log('--start----');
+console.log('----start----');
 function getCurrentConfigs () {
   // Map Okta domain hostnames to their App IDs
   const ENV_CONFIG = {
