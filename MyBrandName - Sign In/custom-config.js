@@ -1,6 +1,6 @@
-console.log('----start----');
+//console.log('----start----');
 function getCurrentConfigs () {
-  // Map Okta domain hostnames to their App IDs
+  
   const ENV_CONFIG = {
     "devonlineservice-login.cinfin.com": {
       WEB_CLIENT_ID: "0oa2nhda4p7jfhkN90h8",
@@ -28,14 +28,7 @@ function getCurrentConfigs () {
     console.error("Unknown Okta environment:", currentHost);
     return;
   }
-
-  // Execute business logic with the dynamic App ID
-  console.log("Running in " + currentConfig.env + " with App ID: " + currentConfig.appId);
-
-  // Example logic checking App ID
-  //if (currentConfig.appId === "0oadev1234567890") {
-    // Perform App-specific logic
-  //}
+  console.log("Running in " + currentConfig.env );
   return currentConfig;
 };
-console.log('----end----');
+
