@@ -1,4 +1,4 @@
-//console.log('----start----');
+console.log('----starting----');
 function getCurrentConfigs () {
   
   const ENV_CONFIG = {
