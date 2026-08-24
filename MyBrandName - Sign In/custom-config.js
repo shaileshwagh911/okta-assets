@@ -36,7 +36,7 @@ function getCurrentConfigs () {
     console.error("Unknown Okta environment:", currentHost);
     return;
   }
-  console.log("Running in " + currentConfig.env );
+  console.log("Running in " + currentConfig.ENV );
   return currentConfig;
 };
 
